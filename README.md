@@ -1,11 +1,26 @@
-# transformer-from-scratch
+# Transformer from Scratch
 
-**Pure PyTorch GPT-style Transformer from scratch**  
-Includes byte-level BPE tokenizer, causal self-attention, training loop, and autoregressive text generation.
+This project is an educational yet fully functional implementation of a GPT-style Transformer and BPE tokenizer written from scratch in PyTorch.
+
+The main goal of the project is to help developers understand how Transformers and Large Language Models work internally, without hiding core logic behind high-level libraries and frameworks.
+At the same time, this is not a toy example — the project provides a complete, working pipeline for tokenization, training, and text generation, suitable for small-scale experiments and research.
+
+The code intentionally prioritizes clarity and transparency over performance optimizations, making it easy to read, modify, and experiment with.
+This repository is designed both as a learning resource and as a solid foundation for further extensions.
+
+**Key characteristics:**
+- GPT-style decoder-only Transformer implemented from first principles
+- Custom BPE tokenizer implemented without external NLP libraries
+- End-to-end training and text generation pipeline
+- Focus on understanding attention, embeddings, and training dynamics
+
+**Important note:**
+This project is not intended for large-scale pretraining or production deployment.
+Its primary purpose is educational, while still remaining a fully operational and extensible implementation.
 
 ---
 
-##  Features
+## Features
 
 - Minimal GPT-style Transformer implemented fully in PyTorch  
 - Byte-level BPE tokenizer for flexible tokenization  
