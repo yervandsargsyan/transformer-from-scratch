@@ -8,9 +8,9 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Parameters
-    seq_len = 50
+    seq_len = 200
     stride = 1        # window shift
-    batch_size = 4
+    batch_size = 8
     n_epochs = 10    # number of epochs for testing
 
     # Load tokenizer

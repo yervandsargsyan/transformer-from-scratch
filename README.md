@@ -27,6 +27,18 @@ pip install -r requirements.txt
 ---
 
 ## Training
+
+### Prepare your corpus
+Put your text in `data/corpus.txt`.  
+You can use the included sample text or replace it with your own.
+
+### Train the tokenizer (one-time)
+Before training the model, you must first train the tokenizer on your corpus:
+
+```bash
+python -m scripts.train_tokenizer
+```
+### Train model
 ```bash
 python -m scripts.train_loop     
 ```
