@@ -5,20 +5,20 @@ from scripts.load_tokenizer import load_tokenizer
 def main():
     text = "hello world"
 
-    # 1️⃣ Train tokenizer
+    # Train tokenizer
     trainer = BPETrainer()
     tokenizer = trainer.train(text, vocab_size=300)
     print("Tokenizer trained. Merges:", tokenizer.merges)
 
-    # 2️⃣ Save tokenizer
+    #  Save tokenizer
     save_tokenizer(tokenizer, path="tokenizer.json")
     print("Tokenizer saved to tokenizer.json")
 
-    # 3️⃣ Load tokenizer
+    #  Load tokenizer
     loaded_tokenizer = load_tokenizer(path="tokenizer.json")
     print("Tokenizer loaded from tokenizer.json")
 
-    # 4️⃣ Test encode/decode
+    # Test encode/decode
     ids = loaded_tokenizer.encode(text)
     decoded = loaded_tokenizer.decode(ids)
 
